@@ -1,0 +1,6 @@
+{
+  "name": "Amerce — Electronics & Tech Storefront",
+  "description": "Multipurpose eCommerce storefront for premium electronics, audio gear, smartwatches, and modern accessories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

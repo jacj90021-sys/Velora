@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id="meta-viewport" />
+    <title>Velora — Better Homes. Happier Lives.</title>
+    <meta name="description" content="Discover our handcrafted furniture that brings elegance, comfort and functionality to your everyday life." />
+    <meta property="og:title" content="Velora — Better Homes. Happier Lives." />
+    <meta property="og:description" content="Discover our handcrafted furniture that brings elegance, comfort and functionality to your everyday life." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="shortcut icon" href="/assets/images/logo/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      (function() {
+        try {
+          var isInsideIframe = window.self !== window.top;
+          var ua = navigator.userAgent || '';
+          var hasTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+          
+          // Detect desktop mode: inside Google AI Studio preview iframe, or mobile browser Desktop site, or screen width >= 768px
+          var isClientHintDesktop = Boolean(navigator.userAgentData && navigator.userAgentData.mobile === false);
+          var isSafariDesktop = /Macintosh/i.test(ua) && hasTouch;
+          var isAndroidDesktop = hasTouch && !/Mobile/i.test(ua) && (/Android|Linux|X11/i.test(ua));
+          
+          var isDesktop = isInsideIframe || (hasTouch && (isClientHintDesktop || isSafariDesktop || isAndroidDesktop)) || (window.innerWidth >= 768);
+
+          if (isDesktop) {
+            document.documentElement.classList.add('velora-desktop-mode');
+            var meta = document.getElementById('meta-viewport');
+            if (meta) {
+              meta.setAttribute('content', 'width=1280, initial-scale=0.3, user-scalable=yes');
+            }
+          }
+        } catch(e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
